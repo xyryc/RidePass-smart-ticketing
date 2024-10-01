@@ -75,39 +75,45 @@
           </div>
 
           <!-- ticket container -->
-          <div class="p-8 grid grid-cols-12 gap-16 rounded-3xl">
+          <div
+            class="p-4 md:p-8 grid grid-cols-1 md:grid-cols-12 gap-6 rounded-3xl"
+          >
             <!-- ticket details section -->
-            <div class="col-span-8">
+            <div class="col-span-1 md:col-span-8">
               <!-- top -->
-              <div class="font-Inter flex justify-between items-center">
+              <div
+                class="font-Inter flex justify-between items-center flex-col md:flex-row"
+              >
                 <!-- left -->
-                <div class="flex items-center gap-[14px]">
-                  <img
-                    class="w-[68px] h-[48px]"
-                    src="./images/bus-logo.png"
-                    alt=""
-                  />
+                <div class="flex items-center gap-4">
+                  <img class="w-16 h-12" src="./images/bus-logo.png" alt="" />
                   <div>
-                    <h3 class="text-[32px] font-bold">Skyline Coach Service</h3>
-                    <p class="text-lg font-normal text-gray-500">
+                    <h3 class="text-xl md:text-2xl lg:text-3xl font-bold">
+                      Skyline Coach Service
+                    </h3>
+                    <p class="text-sm md:text-lg font-normal text-gray-500">
                       Coach-010-XYR ! AC_Business
                     </p>
                   </div>
                 </div>
                 <!-- right -->
-                <button class="btn bg-buttonColor">
-                  <img src="./images/seat-green.png" alt="" />
-                  <span class="text-lg font-medium text-primary">
-                    <span id="available-seat">40</span> Seats left</span
-                  >
+                <button
+                  class="btn bg-buttonColor mt-4 md:mt-0 flex items-center"
+                >
+                  <img src="./images/seat-green.png" alt="" class="mr-2" />
+                  <span class="text-sm md:text-lg font-medium text-primary">
+                    <span id="available-seat">40</span> Seats left
+                  </span>
                 </button>
               </div>
 
               <!-- bottom -->
-              <div class="p-8 rounded-3xl space-y-6 mt-6">
+              <div
+                class="p-4 md:p-8 rounded-3xl space-y-4 md:space-y-6 mt-4 md:mt-6"
+              >
                 <!-- route -->
                 <div
-                  class="text-[18px] font-semibold flex justify-between items-center"
+                  class="text-sm md:text-lg font-semibold flex justify-between items-center"
                 >
                   <span class="text-gray-500">Route</span>
                   <span>Dhaka - Dinajpur</span>
@@ -117,7 +123,7 @@
 
                 <!-- depart time -->
                 <div
-                  class="text-[18px] font-semibold flex justify-between items-center"
+                  class="text-sm md:text-lg font-semibold flex justify-between items-center"
                 >
                   <span class="text-gray-500">Departure Time</span>
                   <span>10:30 PM</span>
@@ -127,22 +133,36 @@
 
                 <!-- location -->
                 <div
-                  class="text-base font-medium font-Inter flex justify-around"
+                  class="text-base font-medium font-Inter flex flex-col xl:flex-row justify-around space-y-3 xl:space-y-0"
                 >
-                  <button class="btn">Boarding Point - Mirpur</button>
-                  <button class="btn">Dropping Point - Modern Mor</button>
-                  <button class="btn">Est. Time - 11 Hour</button>
+                  <button class="btn w-full mb-2 md:mb-0 md:w-auto">
+                    Boarding Point - Mirpur
+                  </button>
+                  <button class="btn w-full mb-2 md:mb-0 md:w-auto">
+                    Dropping Point - Modern Mor
+                  </button>
+                  <button class="btn w-full md:w-auto">
+                    Est. Time - 11 Hour
+                  </button>
                 </div>
               </div>
             </div>
 
             <!-- ticket price -->
             <div
-              class="col-span-4 border-l-2 border-dashed border-primary pl-16 flex flex-col justify-center items-center"
+              class="col-span-1 md:col-span-4 border-t md:border-t-0 md:border-l-2 border-dashed border-primary pl-4 md:pl-8 flex flex-col justify-center items-center"
             >
-              <img src="./images/fare.png" alt="" />
-              <h2 class="text-[32px] font-bold">550 Taka</h2>
-              <p class="text-2xl font-semibold text-gray-500">Per Seat</p>
+              <img
+                src="./images/fare.png"
+                alt=""
+                class="w-24 md:w-32 lg:w-auto"
+              />
+              <h2 class="text-xl md:text-2xl lg:text-3xl font-bold">
+                550 Taka
+              </h2>
+              <p class="text-base md:text-xl font-semibold text-gray-500">
+                Per Seat
+              </p>
             </div>
           </div>
         </div>
@@ -150,7 +170,7 @@
 
       <!-- selection section -->
       <section
-        class="bg-[#f7f8f8] px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid grid-cols-3 gap-5"
+        class="hidden bg-[#f7f8f8] px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid grid-cols-3 gap-5"
       >
         <!-- seat section -->
         <div class="col-span-2">
@@ -660,7 +680,8 @@
                   <div class="modal-action">
                     <form method="dialog">
                       <!-- if there is a button in form, it will close the modal -->
-                      <button id="btn-continue"
+                      <button
+                        id="btn-continue"
                         class="btn btn-wide rounded-[32px] bg-[#27ae60] text-white mb-5"
                       >
                         Continue
