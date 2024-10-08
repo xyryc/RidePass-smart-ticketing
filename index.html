@@ -57,7 +57,65 @@
     </script>
   </head>
   <body class="font-RaleWay">
-    <header></header>
+    <header>
+      <!-- navbar -->
+      <nav class="w-11/12 mx-auto my-4 2xl:my-9">
+        <div class="navbar bg-base-100">
+          <!-- navbar start -->
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-4xl font-extrabold">RidePass</a>
+          </div>
+
+          <!-- navbar center -->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg font-medium">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+
+          <!-- navbar end -->
+          <div class="navbar-end">
+            <a
+              class="btn btn-outline border-green-500 text-green-500 text-xl font-bold hover:text-black hover:bg-white bg-buttonColor"
+              >Bus <img src="./images/bus-icon.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section  -->
+      <section></section>
+    </header>
 
     <main>
       <!-- ticket section  -->
@@ -170,10 +228,10 @@
 
       <!-- selection section -->
       <section
-        class="hidden bg-[#f7f8f8] px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm grid grid-cols-3 gap-5"
+        class="px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm flex flex-col xl:grid xl:grid-cols-3 gap-5"
       >
         <!-- seat section -->
-        <div class="col-span-2">
+        <div class="xl:col-span-2">
           <div>
             <h2 class="text-2xl font-semibold text-secondary">
               Select Your Seat
@@ -530,7 +588,7 @@
         </div>
 
         <!-- input section -->
-        <div class="border-l-2 pl-8 border-dashed">
+        <div class="xl:border-l-2 xl:pl-8 mt-10 xl:mt-0 border-dashed">
           <div>
             <h2 class="text-2xl font-semibold text-secondary">
               Select Your Seat
@@ -539,7 +597,7 @@
           <!-- border -->
           <div class="border-b-2 my-4 border-dashed"></div>
           <div class="font-Inter">
-            <div class="bg-[#f7f8f8] p-8">
+            <div class="p-8">
               <h3 class="flex justify-between">
                 <p class="flex">
                   <span>Seat</span>
@@ -581,7 +639,7 @@
               >
                 <input
                   id="coupon-field"
-                  class="py-3.5 px-5 rounded-xl outline-primary text-sm font-light"
+                  class="py-3.5 px-5 rounded-xl outline-primary text-sm font-light w-full"
                   disabled
                   type="text"
                   name=""
