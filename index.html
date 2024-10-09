@@ -176,7 +176,7 @@
               <img src="./images/stoppage.png" alt="" />
               <div>
                 <h2 class="font-Inter text-4xl font-bold">80 K+</h2>
-                <p class="font-Inter text-lg text-gray-500">Registered users</p>
+                <p class="font-Inter text-lg text-gray-500">Daily Passengers</p>
               </div>
             </div>
           </div>
@@ -222,34 +222,34 @@
           </div>
 
           <!-- token 2 -->
-             <div class="grid grid-cols-12 bg-couponTwo rounded-3xl">
-              <!-- left -->
+          <div class="grid grid-cols-12 bg-couponTwo rounded-3xl">
+            <!-- left -->
+            <div
+              class="relative col-span-7 p-[52px] font-Inter text-left border-dashed border-r-2"
+            >
+              <h3 class="text-[40px] font-black">20% OFF</h3>
+              <h4 class="text-xl font-semibold">on your next purchase</h4>
+              <h5 class="text-lg font-medium text-gray-700">
+                use by March, 2025
+              </h5>
+
+              <!-- circle -->
               <div
-                class="relative col-span-7 p-[52px] font-Inter text-left border-dashed border-r-2"
-              >
-                <h3 class="text-[40px] font-black">20% OFF</h3>
-                <h4 class="text-xl font-semibold">on your next purchase</h4>
-                <h5 class="text-lg font-medium text-gray-700">
-                  use by March, 2025
-                </h5>
-  
-                <!-- circle -->
-                <div
-                  class="absolute -top-[26px] -right-[25px] bg-white rounded-full p-6"
-                ></div>
-  
-                <!-- circle -->
-                <div
-                  class="absolute -bottom-[26px] -right-[25px] bg-white rounded-full p-6"
-                ></div>
-              </div>
-  
-              <!-- right -->
-              <div class="col-span-5 px-[38px] py-16 font-RaleWay">
-                <h3 class="text-[32px] font-bold">Couple 20</h3>
-                <h5 class="text-xl font-medium text-gray-700">Coupon Code</h5>
-              </div>
+                class="absolute -top-[26px] -right-[25px] bg-white rounded-full p-6"
+              ></div>
+
+              <!-- circle -->
+              <div
+                class="absolute -bottom-[26px] -right-[25px] bg-white rounded-full p-6"
+              ></div>
             </div>
+
+            <!-- right -->
+            <div class="col-span-5 px-[38px] py-16 font-RaleWay">
+              <h3 class="text-[32px] font-bold">Couple 20</h3>
+              <h5 class="text-xl font-medium text-gray-700">Coupon Code</h5>
+            </div>
+          </div>
         </div>
 
         <!-- button -->
@@ -370,7 +370,7 @@
 
       <!-- selection section -->
       <section
-        class="px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm flex flex-col xl:grid xl:grid-cols-3 gap-5"
+        class="mb-32 px-8 py-5 w-11/12 mx-auto rounded-2xl shadow-sm flex flex-col xl:grid xl:grid-cols-3 gap-5"
       >
         <!-- seat section -->
         <div class="xl:col-span-2">
@@ -910,7 +910,48 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="bg-secondary text-white">
+      <div class="w-11/12 mx-auto py-[120px]">
+        <!-- top -->
+        <div class="flex justify-between">
+          <!-- left -->
+          <div>
+            <h2 class="text-4xl font-extrabold">RidePass</h2>
+            <p class="font-Inter text-lg w-3/5 mt-4 text-neutral-400">
+              P-Ticket is a digital platform to make your daily commuting
+              better.
+            </p>
+          </div>
+
+          <!-- right -->
+          <div>
+            <h4 class="text-xl font-semibold mb-5">Download our app</h4>
+            <img src="./images/playstore.png" alt="" />
+          </div>
+        </div>
+
+        <!-- divider -->
+        <div
+          class="border-neutral-300 border-[1.5px] border-dashed mt-12 mb-8"
+        ></div>
+
+        <!-- bottom -->
+        <div class="font-Inter flex justify-between">
+          <!-- left -->
+          <div class="text-base text-neutral-500">
+            &copy; 2024, All Rights Reserved, RidePass Transportation Services
+            Limited.
+          </div>
+
+          <!-- right -->
+          <div class="font-medium space-x-8">
+            <a href="">Terms & Conditions</a>
+            <a href="">Return & Refund Policy</a>
+            <a href="">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="./app.js"></script>
   </body>
